@@ -1,3 +1,4 @@
+//eslint-ignore-next-line
 module.exports = {
     extends: [
         'airbnb-typescript',
@@ -26,6 +27,7 @@ module.exports = {
         },
         ecmaVersion: 2018,
         sourceType: 'module',
+        project: './tsconfig.json'
       },
       rules: {
         'quotes': ['error', 'single'],
@@ -34,6 +36,7 @@ module.exports = {
           'error',
           {
             endOfLine: 'auto',
+            singleQuote: true
           },
         ],
       },

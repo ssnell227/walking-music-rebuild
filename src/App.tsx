@@ -1,10 +1,17 @@
-import React from "react";
-import "./App.css";
+import React, { useEffect } from 'react';
+import './App.css';
+import { search } from './utils/spotify';
 
 function App() {
-  return <div className="App">
-    <a href=''></a>
-  </div>;
+  useEffect(() => {
+    search('beatles', 'artist').then((res) => console.log(res));
+  }, []);
+
+  return (
+    <div className="App">
+      <h1>Hello</h1>
+    </div>
+  );
 }
 
 export default App;
